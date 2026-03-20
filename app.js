@@ -1,4 +1,4 @@
-const SCRIPT_URL = "PASTE_YOUR_NEW_URL_HERE";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx4T5QmmbgFYL_fIlDIUIOgQ_D56yjrbnTWY4Y69MiAfS7wsrV1hQgRUVYLi2ExKjYOiA/exec";
 
 // The 'async' here makes 'await' valid below
 gateForm.addEventListener('submit', async (e) => {
