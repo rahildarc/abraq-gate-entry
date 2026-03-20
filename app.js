@@ -1,5 +1,5 @@
 // --- CONFIGURATION ---
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbuwWV7BswMsKgSbTvuqNhQv_5eJdzU6kszwxmj92XM-GACZIRQrJAV7qLL7src2N1Blb/exec"; 
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxahaK6LpSa4XQ6q8GUiXIEvCq-EWZDiCyOEQrfYK9cm6VMgmh3kRQF1-KBojh7UtCm/exec"; 
 const GROUP_URL = "https://chat.whatsapp.com/Bs8iGTHqfjp4kp9o1NKHQD";
 
 // --- DOM ELEMENTS ---
