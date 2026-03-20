@@ -1,0 +1,33 @@
+:root { --main: #1e272e; --green: #05c46b; --blue: #3c40c6; --orange: #ff3f34; --bg: #f1f2f6; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); margin: 0; padding: 10px; }
+.container { max-width: 450px; margin: auto; }
+header { text-align: center; margin-bottom: 15px; }
+header h1 { margin: 0; color: var(--main); font-size: 20px; font-weight: 800; }
+.cloud-badge { font-size: 10px; color: var(--green); font-weight: bold; margin-top: 5px; }
+
+.card { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 15px; }
+.row { display: flex; gap: 10px; }
+.col, .field { flex: 1; margin-bottom: 12px; }
+label { display: block; font-size: 11px; font-weight: bold; color: #7f8c8d; margin-bottom: 5px; text-transform: uppercase; }
+input, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; font-size: 16px; box-sizing: border-box; }
+
+.type-selection { display: flex; gap: 10px; }
+.t-btn { flex: 1; padding: 12px; border: 1.5px solid #ddd; background: white; border-radius: 10px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+.t-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+
+.primary-btn { width: 100%; padding: 16px; background: var(--main); color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px; cursor: pointer; }
+.wa-btn { width: 100%; padding: 16px; background: var(--green); color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 16px; margin-top: 10px; cursor: pointer; }
+
+.dashboard { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 15px; }
+.stat { background: white; padding: 10px; border-radius: 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+.stat span { display: block; font-size: 10px; color: #7f8c8d; margin-bottom: 2px; }
+.stat b { font-size: 18px; color: var(--main); }
+.stat.orange b { color: var(--orange); }
+
+.log-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.log-header h3 { margin: 0; font-size: 14px; color: var(--main); }
+.table-scroll { overflow-x: auto; max-height: 250px; border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { text-align: left; color: #bdc3c7; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+td { padding: 10px 0; border-bottom: 1px solid #f9f9f9; }
+.clear-btn { background: #eee; border: none; padding: 5px 10px; border-radius: 6px; font-size: 10px; cursor: pointer; }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Abraq Gate System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ABRAQ AGRO FRESH</h1>
+            <div class="cloud-badge">CLOUD DATABASE ACTIVE 🟢</div>
+        </header>
+
+        <div class="card">
+            <form id="gateForm">
+                <div class="row">
+                    <div class="col">
+                        <label>Pallet No</label>
+                        <input type="number" id="palletNo" placeholder="000" required>
+                    </div>
+                    <div class="col">
+                        <label>Unit</label>
+                        <select id="unit" required>
+                            <option value="">--</option>
+                            <option value="A">Unit A</option>
+                            <option value="B">Unit B</option>
+                            <option value="C">Unit C</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Grower Name</label>
+                    <input type="text" id="grower" placeholder="Enter Grower" required>
+                </div>
+
+                <div class="field">
+                    <label>Purchaser Name</label>
+                    <input type="text" id="purchaser" placeholder="Enter Purchaser" required>
+                </div>
+
+                <div class="field">
+                    <label>Contact Number</label>
+                    <input type="tel" id="contact" pattern="[0-9]{10}" placeholder="10 Digits" required>
+                </div>
+
+                <div class="field">
+                    <label>Entry Type</label>
+                    <div class="type-selection">
+                        <button type="button" class="t-btn" data-type="By Hand">🤲 By Hand</button>
+                        <button type="button" class="t-btn" data-type="By Car">🚗 By Car</button>
+                    </div>
+                    <input type="hidden" id="entryType" required>
+                </div>
+
+                <div id="carInput" class="field anim" style="display:none;">
+                    <label>Vehicle Number</label>
+                    <input type="text" id="carNo" placeholder="JK-01-XXXX">
+                </div>
+
+                <button type="submit" id="saveBtn" class="primary-btn">SAVE TO DATABASE ✅</button>
+                <button type="button" id="whatsappBtn" class="wa-btn" style="display:none;">SEND TO IT GROUP 💬</button>
+            </form>
+        </div>
+
+        <div class="dashboard">
+            <div class="stat"><span>Unit A</span><b id="cA">0</b></div>
+            <div class="stat"><span>Unit B</span><b id="cB">0</b></div>
+            <div class="stat"><span>Unit C</span><b id="cC">0</b></div>
+            <div class="stat orange"><span>Cars</span><b id="cV">0</b></div>
+        </div>
+
+        <div class="card log-section">
+            <div class="log-header">
+                <h3>Live Activity Log</h3>
+                <button onclick="clearScreen()" class="clear-btn">Clear Screen</button>
+            </div>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr><th>Time</th><th>Pallet</th><th>Unit</th><th>Vehicle</th></tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
